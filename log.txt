@@ -1,0 +1,47 @@
+[1] [TEST] Initial State Validation
+[2] PASS: List A is empty
+[3] [TEST] Bulk Insertions via operator+=
+[4] Inserted: 10 | Status: PASS
+[5] Inserted: 20 | Status: PASS
+[6] Inserted: 30 | Status: PASS
+[7] Inserted: 40 | Status: PASS
+[8] Inserted: 50 | Status: PASS
+[9] Inserted: 60 | Status: PASS
+[10] Inserted: 70 | Status: PASS
+[11] Inserted: 80 | Status: PASS
+[12] Inserted: 90 | Status: PASS
+[13] Inserted: 100 | Status: PASS
+[14] Inserted: 110 | Status: PASS
+[15] Inserted: 120 | Status: PASS
+[16] Inserted: 130 | Status: PASS
+[17] Inserted: 140 | Status: PASS
+[18] Inserted: 150 | Status: PASS
+[19] Inserted: 160 | Status: PASS
+[20] Inserted: 170 | Status: PASS
+[21] Inserted: 180 | Status: PASS
+[22] Inserted: 190 | Status: PASS
+[23] Inserted: 200 | Status: PASS
+[24] [TEST] Specific Searches via operator[]
+[25] Search 50 (exists): PASS
+[26] Search 150 (exists): PASS
+[27] Search 999 (does not exist): PASS
+[28] [TEST] Multiple Deletions via operator-=
+[29] Deleted: 20 | Status: PASS
+[30] Deleted: 40 | Status: PASS
+[31] Deleted: 60 | Status: PASS
+[32] [TEST] Exception Handling Validation
+[33] PASS: Custom DuplicateValueException safely caught.
+[34] PASS: Standard std::invalid_argument safely caught.
+[35] [TEST] Edit Operation via operator%=
+[36] Edit 70 to 75 | Status: PASS
+[37] Current List A Data: SkipList [Size: 17, Max Actual Lvl: 6] Elements: 10 30 50 75 80 ... 160 170 180 190 200 
+[38] [TEST] Deep Copy & All 6 Logical Comparisons
+[39] Deep Copy | Status: PASS: operator==
+[40] Compare | Status: PASS: operator!=
+[41] Modified List B (added 999) to test inequalities.
+[42] Compare | Status: PASS: operator<
+[43] Compare | Status: PASS: operator<=
+[44] Compare | Status: PASS: operator>
+[45] Compare | Status: PASS: operator>=
+[46] [TEST] Memory Cleanup via operator!
+[47] Cleaned List B | Status: PASS
